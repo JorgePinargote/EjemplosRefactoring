@@ -15,7 +15,22 @@ public class Comentarios {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int valor=15;
+        int taxes=16;
+        int descuento=15;
+        
+        if(valor>5 && valor<100 && taxes<15 && descuento>15 ){
+            // Si el articulo es accesible podria comprarse
+            System.out.println("comprar");
+        }
+        
+        // Extraer variable 
+        
+        boolean accesible = valor>5 && valor<100 && taxes<15 && descuento>15;
+        if(accesible){
+            System.out.println("comprar");
+        }
+        
     }
     
 }
